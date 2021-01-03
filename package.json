@@ -1,0 +1,47 @@
+{
+  "homepage": "https://github.com/nucle0tides/tinder-profile#readme",
+  "name": "tinder-profile",
+  "version": "1.0.0",
+  "description": "swiping left on pius is against the law",
+  "main": "index.js",
+  "scripts": {
+    "build": "NODE_ENV=production webpack --mode production",
+    "dev": "NODE_ENV=development webpack-dev-server --mode development --progress",
+    "copy:CNAME": "cp ./CNAME ./dist/CNAME",
+    "predeploy": "npm run copy:CNAME && npm run build",
+    "deploy": "NODE_ENV=production NODE_DEBUG=gh-pages gh-pages -d ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nucle0tides/tinder-profile.git"
+  },
+  "author": "gabby ortman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nucle0tides/tinder-profile/issues"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^4.3.0",
+    "file-loader": "^6.1.0",
+    "gh-pages": "^3.1.0",
+    "html-webpack-plugin": "^4.5.0",
+    "node-sass": "^4.14.1",
+    "sass": "^1.26.11",
+    "sass-loader": "^10.0.2",
+    "style-loader": "^1.3.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.3.0",
+    "react-dom": "^16.13.1"
+  }
+}
