@@ -1,0 +1,17 @@
+.bio {
+  margin: 0 5%;
+  height: 20vh;
+  overflow-y: hidden;
+  position: relative;
+
+  &:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background:linear-gradient(transparent 125px, white);
+    pointer-events: none;
+  }
+}
