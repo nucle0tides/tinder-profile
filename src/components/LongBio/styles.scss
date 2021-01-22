@@ -1,6 +1,6 @@
 .bio {
   margin: 0 5%;
-  height: 20vh;
+  height: 25vh;
   overflow-y: hidden;
   position: relative;
 
@@ -14,8 +14,18 @@
     background:linear-gradient(transparent 125px, white);
     pointer-events: none;
   }
+
+  @media only screen and (max-device-width: 812px) {
+    &:after {
+      background:linear-gradient(transparent 5%, white);
+    }
+  }
 }
 
 button {
   all: unset;
+
+  &:focus {
+    outline: none !important;
+  }
 }

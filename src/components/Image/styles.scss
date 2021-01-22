@@ -1,5 +1,10 @@
 .carousel {
   img {
-    width: 375pt;
+    width: 100%;
+    border-radius: 5px;
+    @media screen and (min-device-width: 1200px) {
+      max-width: 375px;
+      max-height: 375px;
+    }
   }
 }

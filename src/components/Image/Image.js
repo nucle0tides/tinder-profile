@@ -4,7 +4,10 @@ import styles from './styles.scss';
 
 const Image = () => {
   return (
-    <Carousel className={styles.carousel}>
+    <Carousel
+      className={styles.carousel}
+      controls={false}
+    >
       <Carousel.Item>
         <img src="https://placekitten.com/g/375/375" />
       </Carousel.Item>

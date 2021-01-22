@@ -1,5 +1,15 @@
+:global(hr) {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
 .bio {
+  width: 100%;
   margin: 1% 5% 1%;
+
+  @media only screen and (max-device-width: 812px) {
+    margin: 1% 0 0 2.5%;
+  }
 }
 
 .name {
@@ -18,5 +28,27 @@
   margin-top: 1rem;
   h6 {
     font-weight: lighter;
+    svg {
+      margin-right: 1rem;
+    }
+  }
+  @media only screen and (max-device-width: 812px) {
+    margin: unset;
+  }
+}
+
+.bio, .location {
+  @media only screen and (max-device-width: 812px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    h4 {
+      font-size: 1.5rem;
+    }
+
+    h6 {
+      font-size: 1rem;
+    }
   }
 }
